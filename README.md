@@ -18,15 +18,15 @@ The Redshift database contains these tables:
 
 The project includes these files:
 * dags:
- - create_tables.sql: SQL statements for creating tables in Redshift
- - udac_axample_dag.py: contains the Airflow dag
+  - create_tables.sql: SQL statements for creating tables in Redshift
+  - udac_axample_dag.py: contains the Airflow dag
 * plugins:
- - operators: 
-  - stage_redshift.py: Airflow custom operator to read JSON files from S3 to Redshift
-  - load_fact.py: Airflow custom operator to load the fact table in Redshift
-  - load_dimension.py: Airflow custom operator to load dimension tables in Redshift
-  - data_quality.py: Airflow custom operator for checking data quality
+  - operators: 
+    - stage_redshift.py: Airflow custom operator to read JSON files from S3 to Redshift
+    - load_fact.py: Airflow custom operator to load the fact table in Redshift
+    - load_dimension.py: Airflow custom operator to load dimension tables in Redshift
+    - data_quality.py: Airflow custom operator for checking data quality
 * helpers:
- - sql_queries.py: Redshift SQL queries used in the pipeline
+  - sql_queries.py: Redshift SQL queries used in the pipeline
 
 
